@@ -1,11 +1,65 @@
 <!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soft</title>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="/styles/styles.css" rel="stylesheet">
   </head>
   <body>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<header class="bg-black text-white px-6 py-4 flex items-center justify-between">
+  <!--!------------------------------------------------Logo -->
+  <h1 class="text-4xl font-semibold tracking-wide">Soft</h1>
+
+  <!--!----------------------------------------- Navegación -->
+  <nav class="flex items-center space-x-8">
+    <a href="#servicio" class="hover:underline font-medium">Servicio</a>
+    <a href="#galeria" class="hover:underline font-medium">Galeria</a>
+
+    <!--!---------------------------------------Botón -->
+    <a
+      href="#reserva"
+class="bg-white text-black font-semibold px-4 py-2 rounded-full border border-transparent hover:border-white hover:bg-black hover:text-white transition"
+    >
+      Agendá tu mesa
+    </a>
+  </nav>
+</header>
+
+
+<!--?-----------------------------------HERO -->
+
+<section class="bg-gradient-to-r from-[#3a2d23] to-black text-white px-6 py-66">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between ">
+    
+    <!--!--------------------------------------------------Texto -->
+    <div class="flex-1">
+      <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Una experiencia <br />
+        única en cada <br />
+        bocado.
+      </h2>
+      <p class="text-sm md:text-base text-gray-200 max-w-md">
+        Bienvenidos a Soft, donde la excelencia culinaria se fusiona con una atmósfera elegante en el corazón de Buenos Aires.
+      </p>
+    </div>
+
+    <!--!---------------------------------------------------Imagen -->
+    <div class="flex-1">
+      <img 
+        src="/public/image.png" 
+        alt="Plato principal del restaurante Soft" 
+        class="rounded-full w-full max-w-[800px] mx-auto md:mx-0 spin" 
+      />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+</body>
+
 </html>
